@@ -1,0 +1,19 @@
+.states-map-popup-pane {
+	display: none;
+}
+
+
+ul.stately {
+  	width:800px; /*width and font size must match*/
+  	font-size:800px;
+    color: #0099ff;
+}
+
+#alert {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #ddd;
+	color: #333;
+	padding: 5px;
+	font-weight: bold;
+}

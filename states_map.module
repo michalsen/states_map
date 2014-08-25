@@ -1,0 +1,37 @@
+<?php
+
+function states_map_init () {
+
+
+   }
+
+function states_map_menu() {
+  // hook_menu to create the securenet_sf webform management page
+  $items = array();
+  $items['admin/states_map'] = array(
+              'title' => 'SN custom',
+              'page callback' => 'states_map_page',
+              'access arguments' => array('accessstates_map content'),
+              'description' => 'sn custom',
+              'access callback' => TRUE,
+              'type' => MENU_LOCAL_TASK,
+          );
+   return $items;
+}
+
+function states_map_page() {
+    return drupal_get_form('states_map_form');
+}
+
+function states_map_form($form, &$form_state) {
+
+   $form['markup'] = array(
+    '#markup' => '<div id="state-details">' . $_REQUEST['state'] . '</div>',
+    '#title' => t(''),
+    );
+
+  return $form;
+
+}
+
+

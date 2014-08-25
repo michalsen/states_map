@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * @file
+ * Leaflet Control install file.
+ */
+
+function states_map_schema() {
+$schema['states_map'] = array(
+        'description' => 'Simple control for Leaflet maps.',
+          'fields' => array(
+            'states_map' => array(
+              'description' => 'control',
+              'type' => 'serial',
+              'not null' => FALSE,
+               'unsigned' => FALSE),
+            'leaflet_label' => array(
+              'description' => 'label',
+              'type' => 'varchar',
+              'length' => 255,
+              'not null' => FALSE,
+               'unsigned' => FALSE),
+            'leaflet_zoom' => array(
+              'description' => 'zoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_minzoom' => array(
+              'description' => 'minzoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_maxzoom' => array(
+              'description' => 'maxzoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_dragging' => array(
+              'description' => 'dragging',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_touchzoom' => array(
+              'description' => 'touchzoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_scrollwheelzoom' => array(
+              'description' => 'scrollwheelzoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_doubleclickzoom' => array(
+              'description' => 'doubleclickzoom',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_zoomcontrol' => array(
+              'description' => 'zoomcontrol',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_attributioncontrol' => array(
+              'description' => 'attributioncontrol',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_trackresize' => array(
+              'description' => 'trackresize',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_fadeanimation' => array(
+              'description' => 'fadeanimation',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_zoomanimation' => array(
+              'description' => 'zoomanimation',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_closepopuponclick' => array(
+              'description' => 'losepopuponclick',
+              'type' => 'int',
+              'unsigned' => FALSE),
+            'leaflet_attribution' => array(
+              'description' => 'attribution',
+              'type' => 'varchar',
+              'length' => 255,
+              'not null' => FALSE),
+            'leaflet_type' => array(
+              'description' => 'type',
+              'type' => 'varchar',
+              'length' => 255,
+              'not null' => FALSE),
+            'leaflet_cloudmade_api' => array(
+              'description' => 'cloudmade_api',
+              'type' => 'varchar',
+              'length' => 255,
+              'not null' => FALSE),
+            'leaflet_cloudmade_mapid' => array(
+              'description' => 'loudmade_mapid',
+              'type' => 'varchar',
+              'length' => 255,
+              'not null' => FALSE),
+            'leaflet_nowrap' => array(
+              'description' => 'nowrap',
+              'type' => 'int',
+              'unsigned' => FALSE),
+         ),
+        'primary key' => array('states_map'),
+  );
+
+   return $schema;
+}

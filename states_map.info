@@ -1,0 +1,15 @@
+; $Id$
+name = States Map
+description = Simple State Map
+package = Mapping
+core = 7.x
+
+
+stylesheets[all][] = states_map.css
+stylesheets[all][] = stately/assets/css/stately.css
+
+
+scripts[] = states_map.js
+scripts[] = raphael.js
+scripts[] = color.jquery.js
+scripts[] = jquery.usmap.js
