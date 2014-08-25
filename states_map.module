@@ -1,9 +1,8 @@
 <?php
-
-function states_map_init () {
-
-
-   }
+/** 
+ *  States Map
+ *  Using Rafael library
+ */
 
 function states_map_menu() {
   // hook_menu to create the securenet_sf webform management page

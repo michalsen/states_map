@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Leaflet Control install file.
+ * States Map install file.
  */
 
 function states_map_schema() {
